@@ -36,6 +36,18 @@
     <line x1="10" y1="50" x2="200" y2="180" style="stroke:red;stroke-width:2" />
     Sorry, your browser does not support inline SVG.
   </svg>
+  <hr>
+
+  <canvas id="myCanvas" width="200" height="100" style="border: 1px solid black">
+    Vaš preglednik ne podržava HTML5 element canvas
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+  </script>
   
   </body>
 </html>
